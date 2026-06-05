@@ -198,6 +198,24 @@
   .ug .val{font-size:21px;font-weight:800}
   .lp .note{font-size:11px;color:var(--amber);margin-top:13px;position:relative}
 
+  /* ── Hervorgehobene „Leucht"-Panels (Nutzung + Tokens) ── */
+  .lp-glow{border-width:1.5px}
+  .glow-green{--glowc:rgba(45,212,167,.26)} .glow-tok{--glowc:rgba(124,139,255,.26)}
+  .lp-glow::before{background:radial-gradient(560px 240px at 50% -30%,var(--glowc),transparent 70%);opacity:1}
+  .lp-glow::after{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1.5px;pointer-events:none;
+    background:linear-gradient(135deg,var(--glowc),transparent 45%,transparent 55%,var(--glowc));
+    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;mask-composite:exclude;opacity:.9}
+  .lp-glow.glow-green{border-color:rgba(45,212,167,.5);animation:rise .5s cubic-bezier(.22,1,.36,1) both,glowG 3.2s ease-in-out infinite}
+  .lp-glow.glow-tok{border-color:rgba(124,139,255,.5);animation:rise .5s cubic-bezier(.22,1,.36,1) both,glowT 3.6s ease-in-out infinite}
+  @keyframes glowG{0%,100%{box-shadow:0 0 0 1px rgba(45,212,167,.20),0 8px 30px rgba(45,212,167,.14)}50%{box-shadow:0 0 0 1px rgba(45,212,167,.5),0 16px 52px rgba(45,212,167,.32)}}
+  @keyframes glowT{0%,100%{box-shadow:0 0 0 1px rgba(124,139,255,.20),0 8px 30px rgba(124,139,255,.16)}50%{box-shadow:0 0 0 1px rgba(124,139,255,.5),0 16px 54px rgba(124,139,255,.34)}}
+  .lp-glow .lp-h{color:#e7ecf7}
+  .glow-green .ug .val{color:#5ff0c6;text-shadow:0 0 16px rgba(45,212,167,.6)}
+  .lp-glow #tok-total{background:linear-gradient(100deg,var(--blue2),var(--pink2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 18px rgba(124,139,255,.5))}
+  .glow-tok .ug .val{color:#aeb9ff;text-shadow:0 0 14px rgba(124,139,255,.5)}
+  @media (prefers-reduced-motion:reduce){.lp-glow{animation:rise .5s both!important}}
+
   footer{margin-top:46px;text-align:center;color:var(--muted);font-size:12.5px;line-height:1.7}
   footer code{background:var(--surface2);padding:2px 7px;border-radius:6px;color:#c7cedd;font-size:12px}
   .stamp{margin-top:14px;font-size:12px;color:var(--muted)} .stamp b{color:var(--text)}
@@ -302,7 +320,7 @@
       <div class="sub" id="foc-sub">Mahlzeit-Detailansicht (volle Nährwerte) + Start-Schnellzugriff sind live. Als Nächstes: native Apps mit Capacitor — gebaut auf <code style="font-size:11px">dev</code>, live erst nach Test &amp; Freigabe.</div>
     </div>
 
-    <div class="lp">
+    <div class="lp lp-glow glow-green">
       <div class="lp-h">📊 Nutzung <span class="pill off" id="ug-pill"><span class="d"></span>live</span></div>
       <ul class="ug">
         <li><span class="k">Registrierte Nutzer</span><span class="val" id="ug-users">—</span></li>
@@ -312,7 +330,7 @@
       <div class="note" id="ug-note">⏳ wird mit dem öffentlichen Zähler befüllt (nächster Schritt)</div>
     </div>
 
-    <div class="lp">
+    <div class="lp lp-glow glow-tok">
       <div class="lp-h">🧠 Entwicklungs-Tokens <span class="pill off" id="tok-pill">Σ</span></div>
       <div id="tok-total" style="font-size:26px;font-weight:800;line-height:1.15">—</div>
       <div class="note" style="margin:6px 0 4px">KI-Tokens, die in den Bau von Strong Gnome geflossen sind</div>
