@@ -1,16 +1,16 @@
 {
-  "state": "active",
-  "current": "Roadmap fürs Handy responsiv gemacht (vertikale Timeline, gestapelte Kacheln)",
-  "version": "v1.0.0",
-  "build": 40,
-  "focus": "v1.1 · Kalorientracker (Phase 1)",
+  "state": "idle",
+  "current": "🎉 v1.1.0 ist LIVE — Kalorientracker, Gauge-Übersicht & geführtes Tutorial veröffentlicht",
+  "version": "v1.1.0",
+  "build": 52,
+  "focus": "v1.1 ausgeliefert · als Nächstes: Ideen-Pipeline (v1.2)",
   "branch": "main",
-  "updatedAt": "2026-06-04T23:12:00+02:00",
+  "updatedAt": "2026-06-05T02:05:00+02:00",
   "activity": [
-    { "t": "2026-06-04T23:12:00+02:00", "msg": "Roadmap mobil-responsiv: vertikale Timeline, nichts mehr abgeschnitten" },
-    { "t": "2026-06-04T22:45:00+02:00", "msg": "Roadmap gehostet unter /roadmap/ — mobil aufrufbar & installierbar" },
-    { "t": "2026-06-04T22:30:00+02:00", "msg": "Live-Panels ins Dashboard gebaut (Aktivität · Builds · Fokus · Firebase)" },
-    { "t": "2026-06-04T22:18:00+02:00", "msg": "Meilensteine prominenter gemacht, Layout verbreitert" },
-    { "t": "2026-06-04T21:51:00+02:00", "msg": "Doku & Aufräumen zum v1.0.0-Release" }
+    { "t": "2026-06-05T02:05:00+02:00", "msg": "🚀 Release v1.1.0 live: Kalorientracker + Gauge-Übersicht + geführtes Tutorial (14 Schritte)" },
+    { "t": "2026-06-05T02:03:00+02:00", "msg": "Backup-Punkt gesichert (stable = v1.0.0) — Rollback-Mechanismus steht" },
+    { "t": "2026-06-05T01:30:00+02:00", "msg": "Tutorial: Freunde-Details, runde Blasen, lange geschwungene Pfeile (auch in Maskulin sichtbar)" },
+    { "t": "2026-06-05T00:40:00+02:00", "msg": "Ernährungs-Übersicht im modernen Bogen-Gauge-Layout" },
+    { "t": "2026-06-05T00:10:00+02:00", "msg": "Zahlen-Overflow- & Massendaten-Absicherung, Meine-Lebensmittel als Dropdown" }
   ]
 }
