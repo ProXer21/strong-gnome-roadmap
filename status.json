@@ -1,16 +1,16 @@
 {
   "state": "idle",
-  "current": "v1.2.0 ist live ausgeliefert 🎉",
-  "focus": "Als Nächstes: native Apps mit Capacitor (nach Freigabe)",
-  "updatedAt": "2026-06-05T05:00:43+02:00",
+  "current": "v1.2.1 live — Tutorial-Hotfix ausgeliefert ✅",
+  "focus": "Als Nächstes: native Apps (Capacitor) bzw. nächstes Feature",
+  "updatedAt": "2026-06-05T05:15:21+02:00",
   "activity": [
     {
-      "t": "2026-06-05T05:00:43+02:00",
-      "m": "✅ v1.2.0 live — Mahlzeit-Detailansicht + Start-Schnellzugriff + Suchfeld-Fix"
+      "t": "2026-06-05T05:15:21+02:00",
+      "m": "🚑 HOTFIX v1.2.1 live — Tutorial-Blase überlief den Bildschirm, Buttons jetzt immer klickbar"
     },
     {
-      "t": "2026-06-05T05:00:43+02:00",
-      "m": "🔒 Backup gesichert (stable = v1.1.0, Rollback-Ziel steht)"
+      "t": "2026-06-05T05:15:21+02:00",
+      "m": "🔒 Backup gesichert (stable = v1.2.0)"
     }
   ]
 }
