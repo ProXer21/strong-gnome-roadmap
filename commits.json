@@ -1,62 +1,76 @@
-[
-  {
-    "msg": "Tutorial: detaillierte Freunde-Schritte (dev)",
-    "date": "2026-06-05T01:49:26+02:00",
-    "hash": "32102d4"
-  },
-  {
-    "msg": "Tutorial: öffnet Reiter wirklich, runde Blasen + lange geschwungene Pfeile (dev)",
-    "date": "2026-06-05T01:34:34+02:00",
-    "hash": "229a2de"
-  },
-  {
-    "msg": "Tutorial: kompaktere Blasen + Pfeil aufs Ziel (dev)",
-    "date": "2026-06-05T01:18:39+02:00",
-    "hash": "68efb29"
-  },
-  {
-    "msg": "Tutorial: geführte App-Tour (Coach-Marks) (dev)",
-    "date": "2026-06-05T01:12:10+02:00",
-    "hash": "1ee8e97"
-  },
-  {
-    "msg": "Kalorientracker: Übersicht im modernen Gauge-Layout (dev)",
-    "date": "2026-06-05T00:58:55+02:00",
-    "hash": "edddf1f"
-  },
-  {
-    "msg": "Kalorientracker: Zahlen-Overflow + Skalierung gefixt (dev)",
-    "date": "2026-06-05T00:51:14+02:00",
-    "hash": "09c0083"
-  },
-  {
-    "msg": "Kalorientracker: Meine-Lebensmittel als Dropdown + Tipp-Vorschläge (dev)",
-    "date": "2026-06-05T00:38:46+02:00",
-    "hash": "de5eba6"
-  },
-  {
-    "msg": "Kalorientracker: 2. Test-Feedback (dev)",
-    "date": "2026-06-05T00:31:06+02:00",
-    "hash": "9304d8f"
-  },
-  {
-    "msg": "Kalorientracker: Test-Feedback umgesetzt (dev)",
-    "date": "2026-06-05T00:20:06+02:00",
-    "hash": "fce9a95"
-  },
-  {
-    "msg": "Kalorientracker v1.1 (auf dev — noch nicht live)",
-    "date": "2026-06-04T23:59:51+02:00",
-    "hash": "35f1ab7"
-  },
-  {
-    "msg": "Roadmap aus App-Repo entfernt → eigenes Repo strong-gnome-roadmap",
-    "date": "2026-06-04T23:39:58+02:00",
-    "hash": "a1174dc"
-  },
-  {
-    "msg": "Roadmap: eigene PWA-Identität (separat installierbar)",
-    "date": "2026-06-04T23:28:08+02:00",
-    "hash": "3c773a4"
-  }
-]
+{
+  "commits": [
+    {
+      "ver": "v1.1.0",
+      "msg": "Release v1.1.0 — Kalorientracker, Gauge-Übersicht & geführtes Tutorial",
+      "iso": "2026-06-05T02:03:41+02:00",
+      "hash": "10e7ffa"
+    },
+    {
+      "ver": "·",
+      "msg": "Tutorial: detaillierte Freunde-Schritte (dev)",
+      "iso": "2026-06-05T01:49:26+02:00",
+      "hash": "32102d4"
+    },
+    {
+      "ver": "·",
+      "msg": "Tutorial: öffnet Reiter wirklich, runde Blasen + lange geschwungene Pfeile (dev)",
+      "iso": "2026-06-05T01:34:34+02:00",
+      "hash": "229a2de"
+    },
+    {
+      "ver": "·",
+      "msg": "Tutorial: kompaktere Blasen + Pfeil aufs Ziel (dev)",
+      "iso": "2026-06-05T01:18:39+02:00",
+      "hash": "68efb29"
+    },
+    {
+      "ver": "·",
+      "msg": "Tutorial: geführte App-Tour (Coach-Marks) (dev)",
+      "iso": "2026-06-05T01:12:10+02:00",
+      "hash": "1ee8e97"
+    },
+    {
+      "ver": "·",
+      "msg": "Kalorientracker: Übersicht im modernen Gauge-Layout (dev)",
+      "iso": "2026-06-05T00:58:55+02:00",
+      "hash": "edddf1f"
+    },
+    {
+      "ver": "·",
+      "msg": "Kalorientracker: Zahlen-Overflow + Skalierung gefixt (dev)",
+      "iso": "2026-06-05T00:51:14+02:00",
+      "hash": "09c0083"
+    },
+    {
+      "ver": "·",
+      "msg": "Kalorientracker: Meine-Lebensmittel als Dropdown + Tipp-Vorschläge (dev)",
+      "iso": "2026-06-05T00:38:46+02:00",
+      "hash": "de5eba6"
+    },
+    {
+      "ver": "·",
+      "msg": "Kalorientracker: 2. Test-Feedback (dev)",
+      "iso": "2026-06-05T00:31:06+02:00",
+      "hash": "9304d8f"
+    },
+    {
+      "ver": "·",
+      "msg": "Kalorientracker: Test-Feedback umgesetzt (dev)",
+      "iso": "2026-06-05T00:20:06+02:00",
+      "hash": "fce9a95"
+    },
+    {
+      "ver": "·",
+      "msg": "Kalorientracker v1.1 (auf dev — noch nicht live)",
+      "iso": "2026-06-04T23:59:51+02:00",
+      "hash": "35f1ab7"
+    },
+    {
+      "ver": "·",
+      "msg": "Roadmap aus App-Repo entfernt → eigenes Repo strong-gnome-roadmap",
+      "iso": "2026-06-04T23:39:58+02:00",
+      "hash": "a1174dc"
+    }
+  ]
+}

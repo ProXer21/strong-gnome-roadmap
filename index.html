@@ -312,6 +312,19 @@
       <div class="note" id="ug-note">⏳ wird mit dem öffentlichen Zähler befüllt (nächster Schritt)</div>
     </div>
 
+    <div class="lp">
+      <div class="lp-h">🧠 Entwicklungs-Tokens <span class="pill off" id="tok-pill">Σ</span></div>
+      <div id="tok-total" style="font-size:26px;font-weight:800;line-height:1.15">—</div>
+      <div class="note" style="margin:6px 0 4px">KI-Tokens, die in den Bau von Strong Gnome geflossen sind</div>
+      <ul class="ug" style="margin-top:12px">
+        <li><span class="k">Eingabe (gelesen)</span><span class="val" id="tok-in">—</span></li>
+        <li><span class="k">Ausgabe (geschrieben)</span><span class="val" id="tok-out">—</span></li>
+        <li><span class="k">Cache gelesen</span><span class="val" id="tok-cr">—</span></li>
+        <li><span class="k">Cache geschrieben</span><span class="val" id="tok-cw">—</span></li>
+      </ul>
+      <div class="note" id="tok-note" style="margin-top:12px">Stand: —</div>
+    </div>
+
   </div>
 
   <!-- ── Journey / Meilensteine (prominent) ── -->
@@ -564,10 +577,30 @@
     }catch(e){ /* Platzhalter bleiben — Zähler kommt mit v1.1 */ }
   }
 
-  loadStatus(); loadCommits(); loadUsage();
+  const tfmt = n => { n = +n || 0;
+    if (n >= 1e9) return (n/1e9).toFixed(1).replace('.',',')+' Mrd';
+    if (n >= 1e6) return (n/1e6).toFixed(1).replace('.',',')+' Mio';
+    if (n >= 1e3) return Math.round(n/1e3)+'k';
+    return String(Math.round(n)); };
+  async function loadTokens(){
+    try{
+      const r = await fetch('tokens.json?t='+Date.now()); if(!r.ok) throw 0;
+      const d = await r.json(); const b = d.breakdown||{};
+      $('tok-total').textContent = tfmt(d.total)+' Tokens';
+      $('tok-in').textContent  = tfmt(b.input);
+      $('tok-out').textContent = tfmt(b.output);
+      $('tok-cr').textContent  = tfmt(b.cacheRead);
+      $('tok-cw').textContent  = tfmt(b.cacheWrite);
+      $('tok-note').textContent = 'Stand: '+rel(d.updatedAt)+' · '+((d.sessions||[]).length)+' Session(s)';
+      const p=$('tok-pill'); p.className='pill on'; p.textContent='live';
+    }catch(e){}
+  }
+
+  loadStatus(); loadCommits(); loadUsage(); loadTokens();
   setInterval(loadStatus, 6000);
   setInterval(loadCommits, 30000);
   setInterval(loadUsage, 60000);
+  setInterval(loadTokens, 60000);
 
   setTimeout(() => location.reload(), 120000);
 </script>
