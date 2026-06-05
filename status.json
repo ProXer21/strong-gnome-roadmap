@@ -1,16 +1,16 @@
 {
   "state": "idle",
-  "current": "🎉 v1.1.0 ist LIVE — Kalorientracker, Gauge-Übersicht & geführtes Tutorial veröffentlicht",
-  "version": "v1.1.0",
-  "build": 52,
-  "focus": "v1.1 ausgeliefert · als Nächstes: Ideen-Pipeline (v1.2)",
-  "branch": "main",
-  "updatedAt": "2026-06-05T02:05:00+02:00",
+  "current": "v1.2.0 ist live ausgeliefert 🎉",
+  "focus": "Als Nächstes: native Apps mit Capacitor (nach Freigabe)",
+  "updatedAt": "2026-06-05T05:00:43+02:00",
   "activity": [
-    { "t": "2026-06-05T02:05:00+02:00", "msg": "🚀 Release v1.1.0 live: Kalorientracker + Gauge-Übersicht + geführtes Tutorial (14 Schritte)" },
-    { "t": "2026-06-05T02:03:00+02:00", "msg": "Backup-Punkt gesichert (stable = v1.0.0) — Rollback-Mechanismus steht" },
-    { "t": "2026-06-05T01:30:00+02:00", "msg": "Tutorial: Freunde-Details, runde Blasen, lange geschwungene Pfeile (auch in Maskulin sichtbar)" },
-    { "t": "2026-06-05T00:40:00+02:00", "msg": "Ernährungs-Übersicht im modernen Bogen-Gauge-Layout" },
-    { "t": "2026-06-05T00:10:00+02:00", "msg": "Zahlen-Overflow- & Massendaten-Absicherung, Meine-Lebensmittel als Dropdown" }
+    {
+      "t": "2026-06-05T05:00:43+02:00",
+      "m": "✅ v1.2.0 live — Mahlzeit-Detailansicht + Start-Schnellzugriff + Suchfeld-Fix"
+    },
+    {
+      "t": "2026-06-05T05:00:43+02:00",
+      "m": "🔒 Backup gesichert (stable = v1.1.0, Rollback-Ziel steht)"
+    }
   ]
 }

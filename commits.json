@@ -1,76 +1,76 @@
 {
   "commits": [
     {
-      "ver": "v1.1.0",
-      "msg": "Release v1.1.0 — Kalorientracker, Gauge-Übersicht & geführtes Tutorial",
-      "iso": "2026-06-05T02:03:41+02:00",
-      "hash": "10e7ffa"
+      "ver": "v1.2.0",
+      "msg": "Release v1.2.0 — Ernährung: Mahlzeit-Detailansicht (volle Nährwerte), Start-Schn",
+      "iso": "2026-06-05T04:58:31+02:00",
+      "hash": "d0df0f8"
     },
     {
       "ver": "·",
-      "msg": "Tutorial: detaillierte Freunde-Schritte (dev)",
-      "iso": "2026-06-05T01:49:26+02:00",
-      "hash": "32102d4"
+      "msg": "Start: Mahlzeiten als volle Karten untereinander (YAZIO-Stil) mit „+\" zum direkt",
+      "iso": "2026-06-05T04:48:59+02:00",
+      "hash": "290b72b"
     },
     {
       "ver": "·",
-      "msg": "Tutorial: öffnet Reiter wirklich, runde Blasen + lange geschwungene Pfeile (dev)",
-      "iso": "2026-06-05T01:34:34+02:00",
-      "hash": "229a2de"
+      "msg": "Start: Mahlzeiten-Schnellzugriff (Frühstück/Mittag/Abend/Snacks) mit Tages-kcal ",
+      "iso": "2026-06-05T04:44:20+02:00",
+      "hash": "71a7df8"
     },
     {
       "ver": "·",
-      "msg": "Tutorial: kompaktere Blasen + Pfeil aufs Ziel (dev)",
-      "iso": "2026-06-05T01:18:39+02:00",
-      "hash": "68efb29"
+      "msg": "SW-Cache auf v61 (Suchfeld-Fix)",
+      "iso": "2026-06-05T04:38:39+02:00",
+      "hash": "f9d022c"
     },
     {
       "ver": "·",
-      "msg": "Tutorial: geführte App-Tour (Coach-Marks) (dev)",
-      "iso": "2026-06-05T01:12:10+02:00",
-      "hash": "1ee8e97"
+      "msg": "Ernährung: doppelte Umrandung im Suchfeld entfernt (kein Fokus-Ring zusätzlich z",
+      "iso": "2026-06-05T04:38:12+02:00",
+      "hash": "d7d4720"
     },
     {
       "ver": "·",
-      "msg": "Kalorientracker: Übersicht im modernen Gauge-Layout (dev)",
-      "iso": "2026-06-05T00:58:55+02:00",
-      "hash": "edddf1f"
+      "msg": "Ernährung: Mahlzeit-Detailansicht (YAZIO-Stil) mit vollen Nährwerten",
+      "iso": "2026-06-05T04:31:30+02:00",
+      "hash": "daf993f"
     },
     {
       "ver": "·",
-      "msg": "Kalorientracker: Zahlen-Overflow + Skalierung gefixt (dev)",
-      "iso": "2026-06-05T00:51:14+02:00",
-      "hash": "09c0083"
+      "msg": "Ernährung: Multi-Select per Long-Press in Meine-Lebensmittel (dev)",
+      "iso": "2026-06-05T04:11:40+02:00",
+      "hash": "16e8f3c"
     },
     {
       "ver": "·",
-      "msg": "Kalorientracker: Meine-Lebensmittel als Dropdown + Tipp-Vorschläge (dev)",
-      "iso": "2026-06-05T00:38:46+02:00",
-      "hash": "de5eba6"
+      "msg": "Ernährung: Vollbild-Hinzufügen im YAZIO-Stil (dev)",
+      "iso": "2026-06-05T04:03:13+02:00",
+      "hash": "688c0a3"
     },
     {
       "ver": "·",
-      "msg": "Kalorientracker: 2. Test-Feedback (dev)",
-      "iso": "2026-06-05T00:31:06+02:00",
-      "hash": "9304d8f"
+      "msg": "Ernährung: Hinzufügen-Dialog kompakter (weniger Abstände) (dev)",
+      "iso": "2026-06-05T03:50:26+02:00",
+      "hash": "f0a5368"
     },
     {
       "ver": "·",
-      "msg": "Kalorientracker: Test-Feedback umgesetzt (dev)",
-      "iso": "2026-06-05T00:20:06+02:00",
-      "hash": "fce9a95"
+      "msg": "Ernährung: Hinzufügen-Dialog Feinschliff (dev)",
+      "iso": "2026-06-05T03:46:18+02:00",
+      "hash": "010f905"
     },
     {
       "ver": "·",
-      "msg": "Kalorientracker v1.1 (auf dev — noch nicht live)",
-      "iso": "2026-06-04T23:59:51+02:00",
-      "hash": "35f1ab7"
+      "msg": "Ernährung: OFF-Suche robuster (Retry + Backoff gegen Aussetzer/Rate-Limit) (dev)",
+      "iso": "2026-06-05T03:38:47+02:00",
+      "hash": "3161733"
     },
     {
       "ver": "·",
-      "msg": "Roadmap aus App-Repo entfernt → eigenes Repo strong-gnome-roadmap",
-      "iso": "2026-06-04T23:39:58+02:00",
-      "hash": "a1174dc"
+      "msg": "Ernährung: Mengen-Einheit wählbar (g · ml · Portion) (dev)",
+      "iso": "2026-06-05T03:28:06+02:00",
+      "hash": "9d4dedb"
     }
   ]
 }
