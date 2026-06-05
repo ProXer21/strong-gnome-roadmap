@@ -1,16 +1,20 @@
 {
   "state": "idle",
-  "current": "v1.2.1 live — Tutorial-Hotfix ausgeliefert ✅",
-  "focus": "Als Nächstes: native Apps (Capacitor) bzw. nächstes Feature",
-  "updatedAt": "2026-06-05T05:15:21+02:00",
+  "current": "v1.3.0 live — Barcode-Scan jetzt auch auf dem iPhone (ZXing-Fallback) ✅",
+  "focus": "Als Nächstes: native Apps (Capacitor) — APK + iOS, nativer Barcode-Scan",
+  "updatedAt": "2026-06-05T10:20:32+02:00",
   "activity": [
     {
-      "t": "2026-06-05T05:15:21+02:00",
-      "m": "🚑 HOTFIX v1.2.1 live — Tutorial-Blase überlief den Bildschirm, Buttons jetzt immer klickbar"
+      "t": "2026-06-05T10:20:32+02:00",
+      "m": "📷 v1.3.0 live — Barcode-Scan funktioniert jetzt auch in iOS-Safari (ZXing-js als Decoder-Fallback)"
     },
     {
-      "t": "2026-06-05T05:15:21+02:00",
-      "m": "🔒 Backup gesichert (stable = v1.2.0)"
+      "t": "2026-06-05T10:20:32+02:00",
+      "m": "🧪 In macOS-Safari (gleiche WebKit-Engine wie iPhone) getestet & bestätigt"
+    },
+    {
+      "t": "2026-06-05T10:20:32+02:00",
+      "m": "🔒 Backup gesichert (stable = v1.2.1) vor dem Release"
     }
   ]
 }

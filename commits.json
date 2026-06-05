@@ -1,6 +1,18 @@
 {
   "commits": [
     {
+      "ver": "v1.3.0",
+      "msg": "Release v1.3.0: Barcode-Scan auf dem iPhone (ZXing-Fallback) — dev→main",
+      "iso": "2026-06-05T10:18:29+02:00",
+      "hash": "c24f7c6"
+    },
+    {
+      "ver": "v1.3.0",
+      "msg": "Barcode-Scan jetzt auch auf dem iPhone: ZXing-js als Decoder-Fallback (iOS Safar",
+      "iso": "2026-06-05T10:07:26+02:00",
+      "hash": "9175274"
+    },
+    {
       "ver": "v1.2.1",
       "msg": "Release v1.2.1 — HOTFIX: Tutorial-Blase überlief den Bildschirm (Weiter/Überspri",
       "iso": "2026-06-05T05:14:14+02:00",
@@ -59,18 +71,6 @@
       "msg": "Ernährung: Vollbild-Hinzufügen im YAZIO-Stil (dev)",
       "iso": "2026-06-05T04:03:13+02:00",
       "hash": "688c0a3"
-    },
-    {
-      "ver": "·",
-      "msg": "Ernährung: Hinzufügen-Dialog kompakter (weniger Abstände) (dev)",
-      "iso": "2026-06-05T03:50:26+02:00",
-      "hash": "f0a5368"
-    },
-    {
-      "ver": "·",
-      "msg": "Ernährung: Hinzufügen-Dialog Feinschliff (dev)",
-      "iso": "2026-06-05T03:46:18+02:00",
-      "hash": "010f905"
     }
   ]
 }
