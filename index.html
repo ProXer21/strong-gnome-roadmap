@@ -632,7 +632,42 @@
   setInterval(loadUsage, 60000);
   setInterval(loadTokens, 60000);
 
-  setTimeout(() => location.reload(), 120000);
+  // Auto-Reload deaktiviert, solange ein Wecker aktiv sein kann (würde Audio-Freigabe/Wake-Lock verlieren).
+  // Daten kommen ohnehin per Polling (oben). setTimeout(() => location.reload(), 120000);
+</script>
+<script>
+/* ⏰ Handy-Wecker: feuert lokal zur Zielzeit (Vollbild + Ton + Vibration). Einmal aktivieren
+   (entsperrt Ton + hält per Wake-Lock den Bildschirm an), damit er auch im Schlaf zuverlässig kommt. */
+(function(){
+  var TARGET=Date.parse("2026-06-06T10:00:00+02:00"), WIN=30*60000, KEY='sg_alarm_1000';
+  if(localStorage.getItem(KEY)==='done') return;
+  var ctx=null, fired=false, wl=null;
+  async function keepAwake(){ try{ if('wakeLock' in navigator){ wl=await navigator.wakeLock.request('screen'); } }catch(e){} }
+  document.addEventListener('visibilitychange',function(){ if(document.visibilityState==='visible' && !document.querySelector('#sgstop')) keepAwake(); });
+  var bar=document.createElement('div');
+  bar.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:99998;background:#0a2a4d;color:#dff;font:600 17px/1.45 system-ui;padding:16px;text-align:center;box-shadow:0 -4px 22px rgba(0,0,0,.55)';
+  bar.innerHTML='🔔 Wecker 10:00 — <b>HIER TIPPEN zum Aktivieren</b>';
+  bar.onclick=function(){
+    try{ctx=new (window.AudioContext||window.webkitAudioContext)();ctx.resume();var o=ctx.createOscillator(),g=ctx.createGain();g.gain.value=0.0001;o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+0.05);}catch(e){}
+    try{navigator.vibrate&&navigator.vibrate(60);}catch(e){}
+    keepAwake();
+    bar.style.background='#06351f'; bar.innerHTML='⏰ Wecker aktiv für 10:00 · Bildschirm bleibt an · gute Nacht, Boss';
+  };
+  document.body.appendChild(bar);
+  function beep(){ if(!ctx)return; try{var o=ctx.createOscillator(),g=ctx.createGain();o.type='square';o.frequency.value=880;g.gain.value=0.6;o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+0.5);}catch(e){} }
+  function fire(){
+    if(fired)return; fired=true;
+    var ov=document.createElement('div');
+    ov.style.cssText='position:fixed;inset:0;z-index:99999;background:#c1121f;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font:800 9vw/1.1 system-ui;text-align:center;gap:5vh;padding:6vw';
+    ov.innerHTML='<div>⏰ 10:00</div><div>AUFSTEHEN, BOSS!</div><button id="sgstop" style="font:700 6vw system-ui;padding:3vh 10vw;border:0;border-radius:16px;background:#fff;color:#c1121f">Stop</button>';
+    document.body.appendChild(ov);
+    var on=true, fl=setInterval(function(){on=!on;ov.style.background=on?'#c1121f':'#5c0a10';},450);
+    var sn=setInterval(beep,650);
+    var vb=setInterval(function(){try{navigator.vibrate&&navigator.vibrate([500,250,500]);}catch(e){}},1300);
+    document.getElementById('sgstop').onclick=function(){clearInterval(fl);clearInterval(sn);clearInterval(vb);ov.remove();localStorage.setItem(KEY,'done');try{wl&&wl.release();}catch(e){}};
+  }
+  setInterval(function(){var n=Date.now();if(n>=TARGET&&n<TARGET+WIN&&localStorage.getItem(KEY)!=='done')fire();},1000);
+})();
 </script>
 </body>
 </html>
