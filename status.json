@@ -1,20 +1,24 @@
 {
   "state": "active",
-  "current": "Kai koordiniert die native App (React Native) — Feature-Parität zur PWA: 14/44",
-  "focus": "Phase 1 (Social) fertigstellen: iOS-Freunde-QA (Leo) + öffentliches Profil & Pläne-teilen (Vera); dann Stat-Charts",
-  "updatedAt": "2026-06-06T12:00:00+02:00",
+  "current": "Kai koordiniert die native App (React Native) — Feature-Parität zur PWA: ~23/44 (~52 %)",
+  "focus": "Phase 3 (Ernährung-Ausbau) läuft; Leo macht 3-Themes-QA von Social + Charts. Offen für Live: nur noch Firestore-Rules-Deploy (Arif).",
+  "updatedAt": "2026-06-06T13:30:00+02:00",
   "activity": [
     {
-      "t": "2026-06-06T12:00:00+02:00",
-      "m": "🧭 Kai hat die App-Koordination übernommen (Proxa = zweites Gehirn, koordiniert nicht mehr selbst)"
+      "t": "2026-06-06T13:30:00+02:00",
+      "m": "✅ Phase 2 (Statistik-Charts) komplett: Konsistenz-Heatmap, Volumen/Woche, Monatsbericht (Ampeln), Kraft-Verlauf je Übung — 93 Tests grün"
+    },
+    {
+      "t": "2026-06-06T13:10:00+02:00",
+      "m": "🎉 Phase 1 (Social) komplett: Freunde, öffentliches Profil, Community-Zähler, Pläne teilen mit Anfrage/Genehmigung"
+    },
+    {
+      "t": "2026-06-06T12:40:00+02:00",
+      "m": "🛡️ Kein-Idle-System: Event-Wächter weckt Kai bei jeder Lieferung + Heartbeat-Wächter + Selbst-Poll-Loops je Agent"
     },
     {
       "t": "2026-06-06T12:00:00+02:00",
-      "m": "📦 Pakete verteilt: Leo → iOS-Freunde-QA (Go-Live-Blocker #1), Vera → Social Feature 2+4, Linus → Support + Phase-1b-Vorbereitung"
-    },
-    {
-      "t": "2026-06-06T12:00:00+02:00",
-      "m": "✅ Freunde-UI gebaut (Code anzeigen+kopieren, hinzufügen, Anfragen annehmen/ablehnen, Badge); Logik-Schicht Phasen 1–6 komplett, 80 Tests grün"
+      "m": "🧭 Kai hat die App-Koordination übernommen (Proxa = zweites Gehirn)"
     }
   ]
 }
