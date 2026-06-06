@@ -1,20 +1,20 @@
 {
-  "state": "idle",
-  "current": "v1.3.0 live — Barcode-Scan jetzt auch auf dem iPhone (ZXing-Fallback) ✅",
-  "focus": "Als Nächstes: native Apps (Capacitor) — APK + iOS, nativer Barcode-Scan",
-  "updatedAt": "2026-06-05T10:20:32+02:00",
+  "state": "active",
+  "current": "Kai koordiniert die native App (React Native) — Feature-Parität zur PWA: 14/44",
+  "focus": "Phase 1 (Social) fertigstellen: iOS-Freunde-QA (Leo) + öffentliches Profil & Pläne-teilen (Vera); dann Stat-Charts",
+  "updatedAt": "2026-06-06T12:00:00+02:00",
   "activity": [
     {
-      "t": "2026-06-05T10:20:32+02:00",
-      "m": "📷 v1.3.0 live — Barcode-Scan funktioniert jetzt auch in iOS-Safari (ZXing-js als Decoder-Fallback)"
+      "t": "2026-06-06T12:00:00+02:00",
+      "m": "🧭 Kai hat die App-Koordination übernommen (Proxa = zweites Gehirn, koordiniert nicht mehr selbst)"
     },
     {
-      "t": "2026-06-05T10:20:32+02:00",
-      "m": "🧪 In macOS-Safari (gleiche WebKit-Engine wie iPhone) getestet & bestätigt"
+      "t": "2026-06-06T12:00:00+02:00",
+      "m": "📦 Pakete verteilt: Leo → iOS-Freunde-QA (Go-Live-Blocker #1), Vera → Social Feature 2+4, Linus → Support + Phase-1b-Vorbereitung"
     },
     {
-      "t": "2026-06-05T10:20:32+02:00",
-      "m": "🔒 Backup gesichert (stable = v1.2.1) vor dem Release"
+      "t": "2026-06-06T12:00:00+02:00",
+      "m": "✅ Freunde-UI gebaut (Code anzeigen+kopieren, hinzufügen, Anfragen annehmen/ablehnen, Badge); Logik-Schicht Phasen 1–6 komplett, 80 Tests grün"
     }
   ]
 }
