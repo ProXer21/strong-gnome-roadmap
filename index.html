@@ -333,12 +333,12 @@
     <div class="lp lp-glow glow-tok">
       <div class="lp-h">🧠 Entwicklungs-Tokens <span class="pill off" id="tok-pill">Σ</span></div>
       <div id="tok-total" style="font-size:26px;font-weight:800;line-height:1.15">—</div>
-      <div class="note" style="margin:6px 0 4px">KI-Tokens, die in den Bau von Strong Gnome geflossen sind</div>
+      <div class="note" style="margin:6px 0 4px">KI-Tokens für die Entwicklung — <b>gesamte Claude-Code-Nutzung über alle Projekte</b> (Strong Gnome = größter Teil)</div>
       <ul class="ug" style="margin-top:12px">
-        <li><span class="k">Eingabe (gelesen)</span><span class="val" id="tok-in">—</span></li>
-        <li><span class="k">Ausgabe (geschrieben)</span><span class="val" id="tok-out">—</span></li>
-        <li><span class="k">Cache gelesen</span><span class="val" id="tok-cr">—</span></li>
-        <li><span class="k">Cache geschrieben</span><span class="val" id="tok-cw">—</span></li>
+        <li><span class="k">Sitzungen</span><span class="val" id="tok-in">—</span></li>
+        <li><span class="k">Nachrichten</span><span class="val" id="tok-out">—</span></li>
+        <li><span class="k">Aktive Tage</span><span class="val" id="tok-cr">—</span></li>
+        <li><span class="k">Lieblingsmodell</span><span class="val" id="tok-cw">—</span></li>
       </ul>
       <div class="note" id="tok-note" style="margin-top:12px">Stand: —</div>
     </div>
@@ -646,13 +646,13 @@
   async function loadTokens(){
     try{
       const r = await fetch('tokens.json?t='+Date.now()); if(!r.ok) throw 0;
-      const d = await r.json(); const b = d.breakdown||{};
+      const d = await r.json();
       $('tok-total').textContent = tfmt(d.total)+' Tokens';
-      $('tok-in').textContent  = tfmt(b.input);
-      $('tok-out').textContent = tfmt(b.output);
-      $('tok-cr').textContent  = tfmt(b.cacheRead);
-      $('tok-cw').textContent  = tfmt(b.cacheWrite);
-      $('tok-note').textContent = 'Stand: '+rel(d.updatedAt)+' · '+((d.sessions||[]).length)+' Session(s)';
+      $('tok-in').textContent  = (d.sessionsCount!=null? String(d.sessionsCount) : '—');
+      $('tok-out').textContent = tfmt(d.messages);
+      $('tok-cr').textContent  = (d.activeDays!=null? String(d.activeDays) : '—');
+      $('tok-cw').textContent  = d.model || '—';
+      $('tok-note').textContent = 'Stand: '+rel(d.updatedAt)+(d.scope? ' · '+d.scope : '');
       const p=$('tok-pill'); p.className='pill on'; p.textContent='live';
     }catch(e){}
   }
