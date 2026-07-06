@@ -1,9 +1,13 @@
 {
   "state": "active",
-  "current": "🍏 iOS-App an TestFlight ausgeliefert (0.1.0 Build 3) — in Apples Beta-Prüfung, erste Testerin eingeladen. Native App (React Native, iPhone + Android) fertig inkl. Streak-System.",
-  "focus": "Warten auf Apples Beta-Freigabe → Freundes-Tests auf TestFlight. Danach App-Store-Vorbereitung. Android-Test-APK bei Arif. Vor öffentlichem Live: Firestore-Rules-Deploy (Arif) + sein OK.",
-  "updatedAt": "2026-07-03T01:00:00+02:00",
+  "current": "🎉 iOS-App hat Apples TestFlight-Beta-Prüfung BESTANDEN — jetzt offen für Tester auf TestFlight. Native App (iPhone + Android) fertig inkl. Streak-System + „alle Makros\"-Ernährungsansicht.",
+  "focus": "TestFlight-Freundes-Tests laufen. Android-Test-APK (v1.9, alle Makros) bei Arif. Vor öffentlichem Live: Firestore-Rules-Deploy (Arif) + sein finales OK. Danach App-Store-Einreichung.",
+  "updatedAt": "2026-07-06T21:38:41+02:00",
   "activity": [
+    {
+      "t": "2026-07-06T21:38:41+02:00",
+      "m": "🎉 TestFlight-Freigabe: Apple hat die iOS-Beta durchgewinkt — Strong Gnome ist jetzt auf TestFlight testbar. Meilenstein iOS!"
+    },
     {
       "t": "2026-07-03T01:00:00+02:00",
       "m": "🍏 iOS auf TestFlight! Strong Gnome 0.1.0 Build 3 an App Store Connect ausgeliefert, in Beta-Prüfung. Erste Testerin eingeladen. Kabel-/API-loser Auslieferungs-Weg eingerichtet (Bundle-ID com.devdesigners.stronggnome, iPhone-only)."
