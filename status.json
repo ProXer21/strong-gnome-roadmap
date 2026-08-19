@@ -1,40 +1,28 @@
 {
   "state": "active",
-  "current": "🎉 iOS-App hat Apples TestFlight-Beta-Prüfung BESTANDEN — jetzt offen für Tester auf TestFlight. Native App (iPhone + Android) fertig inkl. Streak-System + „alle Makros\"-Ernährungsansicht.",
-  "focus": "TestFlight-Freundes-Tests laufen. Android-Test-APK (v1.9, alle Makros) bei Arif. Vor öffentlichem Live: Firestore-Rules-Deploy (Arif) + sein finales OK. Danach App-Store-Einreichung.",
-  "updatedAt": "2026-07-06T21:38:41+02:00",
+  "current": "Native App (iPhone + Android) im Feintuning-Zyklus mit Arifs Echtgerät-Tests. v1.10.5 ausgeliefert: Zunehmen-Modus KOMPLETT (von Arif als korrekt bestätigt) + Root-Fix für Chip/Balken/Glocke (Sofort-Write der aktiven Session).",
+  "focus": "v1.10.6 im Bau: (A) Balken/Chip Render-Fix [Prio 1], (B) Box-Glocke Ding-Ding-Sound, (C) Scroll-Hänger-Audit, (D) App-Version dynamisch aus nativer Build-Nr, (E) Diagnose-Badge raus. Alles in EINEN Test-APK. Kai koordiniert Vera (UI/RN), Linus (Logik), Leo (iOS).",
+  "updatedAt": "2026-08-19T12:46:41+02:00",
   "activity": [
     {
+      "t": "2026-08-19T12:46:00+02:00",
+      "m": "🧭 Kai-Rejoin: online + Team synchronisiert. v1.10.6-Paket verteilt (Render-Fix, Box-Glocke, Scroll, dynamische Version). Warte auf Arifs Workout-Screenshot zum Pinpoint des Balken-Render-Bugs (o/c-Badge)."
+    },
+    {
+      "t": "2026-08-19T10:41:00+02:00",
+      "m": "✅ Zunehmen-Projektion 'Ziel früher erreicht' bestätigt symmetrisch fürs Abnehmen (Linus, 1cb197b) — keine Lücke."
+    },
+    {
+      "t": "2026-08-19T08:15:00+02:00",
+      "m": "🎯 ZUNEHMEN-MODUS komplett & von Arif als korrekt bestätigt: richtungs-bewusste Statistik/Kurve/Kalorien, Profil-Richtungswahl im Onboarding + Tour-Schritt (Vera + Linus, jest174)."
+    },
+    {
+      "t": "2026-08-19T08:00:00+02:00",
+      "m": "🔧 Chip/Balken/Glocke Ur-Bug: Wurzel gefunden — aktive Session wurde nicht sofort persistiert. Sofort-Write-Fix (637b762), Badge bestätigt 'HAS'. Rest-Render-Fix läuft in v1.10.6."
+    },
+    {
       "t": "2026-07-06T21:38:41+02:00",
-      "m": "🎉 TestFlight-Freigabe: Apple hat die iOS-Beta durchgewinkt — Strong Gnome ist jetzt auf TestFlight testbar. Meilenstein iOS!"
-    },
-    {
-      "t": "2026-07-03T01:00:00+02:00",
-      "m": "🍏 iOS auf TestFlight! Strong Gnome 0.1.0 Build 3 an App Store Connect ausgeliefert, in Beta-Prüfung. Erste Testerin eingeladen. Kabel-/API-loser Auslieferungs-Weg eingerichtet (Bundle-ID com.devdesigners.stronggnome, iPhone-only)."
-    },
-    {
-      "t": "2026-07-02T23:30:00+02:00",
-      "m": "🔥 Streak-System QA durch (alle 3 Themes): In-App-Flammen (Essen + Training), Sperrbildschirm-Benachrichtigung, Homescreen-Widget mit 4 Mahlzeiten-Ringen. Android-Test-APK an Arif."
-    },
-    {
-      "t": "2026-07-02T15:10:00+02:00",
-      "m": "✅ Streak-Feature komplett gebaut (Linus Logik + Vera UI/Widget/Notification + Leo iOS): nutritionStreak + trainingWeekStreak (Wochenziel, ruhetage-fair), Homescreen-Widget."
-    },
-    {
-      "t": "2026-06-08T11:00:00+02:00",
-      "m": "🧭 Kai-Rejoin: UI-Parität voll (inkl. Live-Gruppentraining 1b). Vor Live: QA-Hauptlauf + Rules-Deploy + Arifs OK."
-    },
-    {
-      "t": "2026-06-06T14:55:00+02:00",
-      "m": "🎉 VOLLE STANDARD-PARITÄT (Phase 1–6 UI komplett) — App-Tour, Import, Sync-Status, Konto-Reset, PR-Badges, Workout-Dauer."
-    },
-    {
-      "t": "2026-06-06T13:10:00+02:00",
-      "m": "🎉 Phase 1 (Social) komplett: Freunde, öffentliches Profil, Community-Zähler, Pläne teilen mit Anfrage/Genehmigung"
-    },
-    {
-      "t": "2026-06-06T12:00:00+02:00",
-      "m": "🧭 Kai ist der App-Koordinator von Strong Gnome"
+      "m": "🎉 TestFlight-Freigabe: Apple hat die iOS-Beta durchgewinkt — Strong Gnome auf TestFlight testbar. Meilenstein iOS!"
     }
   ]
 }
