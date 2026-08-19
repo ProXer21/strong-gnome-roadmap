@@ -1,28 +1,28 @@
 {
   "state": "active",
-  "current": "Native App (iPhone + Android) im Feintuning-Zyklus mit Arifs Echtgerät-Tests. v1.10.5 ausgeliefert: Zunehmen-Modus KOMPLETT (von Arif als korrekt bestätigt) + Root-Fix für Chip/Balken/Glocke (Sofort-Write der aktiven Session).",
-  "focus": "v1.10.6 im Bau: (A) Balken/Chip Render-Fix [Prio 1], (B) Box-Glocke Ding-Ding-Sound, (C) Scroll-Hänger-Audit, (D) App-Version dynamisch aus nativer Build-Nr, (E) Diagnose-Badge raus. Alles in EINEN Test-APK. Kai koordiniert Vera (UI/RN), Linus (Logik), Leo (iOS).",
-  "updatedAt": "2026-08-19T12:46:41+02:00",
+  "current": "Native App (iPhone + Android) im Feintuning mit Arifs Echtgerät-Tests. v1.10.6 auf Gerät bestätigt (Balken + Scrollen + dynamische Version + 'früher als geplant'-Prognose). v1.10.7 ausgeliefert: Chip-Fix (Workout-Benachrichtigung) + hörbare Box-Glocke + Diagnose-Aufräumen.",
+  "focus": "Android v1.10.7 (vc19) per QR bei Arif zum Test (Chip + Box-Glocke). iOS baut parallel EINEN kombinierten TestFlight-Build (1.10.7/19) mit allem. Kai koordiniert Vera (UI/RN), Linus (Logik), Leo (iOS).",
+  "updatedAt": "2026-08-19T21:55:00+02:00",
   "activity": [
     {
-      "t": "2026-08-19T12:46:00+02:00",
-      "m": "🧭 Kai-Rejoin: online + Team synchronisiert. v1.10.6-Paket verteilt (Render-Fix, Box-Glocke, Scroll, dynamische Version). Warte auf Arifs Workout-Screenshot zum Pinpoint des Balken-Render-Bugs (o/c-Badge)."
+      "t": "2026-08-19T21:55:00+02:00",
+      "m": "📦 v1.10.7 gebaut + per QR an Arif: Chip-Fix (specialUse-FGS wurde auf Android 14 still abgelehnt → jetzt normale Ongoing-Benachrichtigung mit Live-Timer) + hörbare Box-Glocke (Android+iOS) + Diagnose-Badge raus. iOS-TestFlight-Build läuft."
     },
     {
-      "t": "2026-08-19T10:41:00+02:00",
-      "m": "✅ Zunehmen-Projektion 'Ziel früher erreicht' bestätigt symmetrisch fürs Abnehmen (Linus, 1cb197b) — keine Lücke."
+      "t": "2026-08-19T21:30:00+02:00",
+      "m": "✅ v1.10.6 auf Arifs Gerät voll bestätigt: Balken erscheint (safe-area-Fix), Scrollen überall flüssig (Badge pointerEvents), Version zeigt 'v1.10.6 (18)', 'X Wochen früher/später als geplant'-Prognose sichtbar."
+    },
+    {
+      "t": "2026-08-19T12:46:00+02:00",
+      "m": "🧭 Kai-Rejoin: online + Team synchronisiert, v1.10.6/1.10.7-Zyklus koordiniert."
     },
     {
       "t": "2026-08-19T08:15:00+02:00",
-      "m": "🎯 ZUNEHMEN-MODUS komplett & von Arif als korrekt bestätigt: richtungs-bewusste Statistik/Kurve/Kalorien, Profil-Richtungswahl im Onboarding + Tour-Schritt (Vera + Linus, jest174)."
-    },
-    {
-      "t": "2026-08-19T08:00:00+02:00",
-      "m": "🔧 Chip/Balken/Glocke Ur-Bug: Wurzel gefunden — aktive Session wurde nicht sofort persistiert. Sofort-Write-Fix (637b762), Badge bestätigt 'HAS'. Rest-Render-Fix läuft in v1.10.6."
+      "m": "🎯 ZUNEHMEN-MODUS komplett & von Arif als korrekt bestätigt: richtungs-bewusste Statistik/Kurve/Kalorien, Profil-Richtungswahl im Onboarding + Tour-Schritt."
     },
     {
       "t": "2026-07-06T21:38:41+02:00",
-      "m": "🎉 TestFlight-Freigabe: Apple hat die iOS-Beta durchgewinkt — Strong Gnome auf TestFlight testbar. Meilenstein iOS!"
+      "m": "🎉 TestFlight-Freigabe: Apple hat die iOS-Beta durchgewinkt — Strong Gnome auf TestFlight testbar."
     }
   ]
 }
