@@ -1,6 +1,18 @@
 {
   "commits": [
     {
+      "ver": "v1.13.0",
+      "msg": "[build] Android vc29/v1.13.0 — Zeit-Modus direkt im Workout umschaltbar",
+      "iso": "2026-08-23T15:07:01+02:00",
+      "hash": "f4dbf15"
+    },
+    {
+      "ver": "v1.13.0",
+      "msg": "[ui] v1.13.0: Zeit-Modus direkt im laufenden Workout umschalten (Discoverability)",
+      "iso": "2026-08-23T15:02:40+02:00",
+      "hash": "c70a56f"
+    },
+    {
       "ver": "v1.12.1",
       "msg": "[build] Android vc28/v1.12.1 — Zeit-Uebungen + SE-Overflow-Fix fuer lange Timer",
       "iso": "2026-08-23T14:31:13+02:00",
@@ -59,18 +71,6 @@
       "msg": "[ui] Daten-Isolation §4: laufendes Workout pro Konto (activeWorkoutKey(uid))",
       "iso": "2026-08-21T14:11:27+02:00",
       "hash": "5075736"
-    },
-    {
-      "ver": "v1.11.4",
-      "msg": "[build] Android vc24/v1.11.4 — PRIO-1 Daten-Isolation (key={uid} Remount + no-save-until-loaded + Konto-Wechsel-Spinner + Logout-Cleanup)",
-      "iso": "2026-08-21T14:07:42+02:00",
-      "hash": "4a3d8ca"
-    },
-    {
-      "ver": "·",
-      "msg": "[logic] Daten-Isolation §5: Logout räumt laufendes Workout; §4-Helper (uid-scoped key)",
-      "iso": "2026-08-21T14:06:05+02:00",
-      "hash": "49c4dc9"
     }
   ]
 }
