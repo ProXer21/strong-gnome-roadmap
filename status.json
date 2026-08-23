@@ -1,28 +1,28 @@
 {
   "state": "active",
-  "current": "Native App (iPhone + Android) im Feintuning mit Arifs Echtgerät-Tests. v1.10.6 auf Gerät bestätigt (Balken + Scrollen + dynamische Version + 'früher als geplant'-Prognose). v1.10.7 ausgeliefert: Chip-Fix (Workout-Benachrichtigung) + hörbare Box-Glocke + Diagnose-Aufräumen.",
-  "focus": "Android v1.10.7 (vc19) per QR bei Arif zum Test (Chip + Box-Glocke). iOS baut parallel EINEN kombinierten TestFlight-Build (1.10.7/19) mit allem. Kai koordiniert Vera (UI/RN), Linus (Logik), Leo (iOS).",
-  "updatedAt": "2026-08-19T21:55:00+02:00",
+  "current": "Neues Feature LIVE im Test: ZEIT-basierte Übungen mit echtem Countdown-Timer (z. B. Plank 30 Sek → zählt automatisch runter, Ton + Vibration am Ende, auto-geloggt). Jede Übung hat jetzt einen Modus Wdh oder Zeit. Additiv & rollback-sicher — alte Daten bleiben. Als Android-Test-APK v1.12.1 per QR bei Arif.",
+  "focus": "Arif testet v1.12.1 (vc28) auf dem Gerät — v. a. hörbares/fühlbares Countdown-Ende (nur echtes Gerät prüfbar). Team auf Standby für Findings. Kai koordiniert Linus (Logik), Vera (UI), Leo (iOS).",
+  "updatedAt": "2026-08-23T14:34:48+02:00",
   "activity": [
+    {
+      "t": "2026-08-23T14:32:00+02:00",
+      "m": "📦 v1.12.1 (vc28) gebaut + per QR an Arif: ZEIT-Übungen mit Countdown-Timer. Enthält Overflow-Feinschliff für sehr lange Timer (1:00:00) auf schmalen Screens. Launch-Smoke grün, kein Crash/Redbox."
+    },
+    {
+      "t": "2026-08-23T14:24:00+02:00",
+      "m": "✅ Zeit-Übungen komplett: Linus [logic] Datenmodell (mode Wdh/Zeit + Sekunden, additiv, aus Volumen/PR ausgeschlossen, 242 Tests grün), Vera [ui] Editor-Umschalter + Live-Countdown (Start/Pause/Reset, Ton+Haptik, auto-Log) + Verlauf mm:ss + Tutorial, Leo iOS-QA grün."
+    },
+    {
+      "t": "2026-08-23T11:50:00+02:00",
+      "m": "⏱️ Neuer Auftrag von Arif: Übungen die auf Zeit laufen statt Wiederholungen (Plank, Wall-Sit …) → echter Countdown-Timer. Spec geschrieben, ans Team verteilt."
+    },
+    {
+      "t": "2026-08-21T15:20:00+02:00",
+      "m": "🛟 Datenverlust-Recovery abgeschlossen: Arifs Konto über Google wiederhergestellt (Provider-uid-Falle: 1. Versuch ging ins E-Mail-Konto). Konten-Audit-Tool gebaut."
+    },
     {
       "t": "2026-08-19T21:55:00+02:00",
       "m": "📦 v1.10.7 gebaut + per QR an Arif: Chip-Fix (specialUse-FGS wurde auf Android 14 still abgelehnt → jetzt normale Ongoing-Benachrichtigung mit Live-Timer) + hörbare Box-Glocke (Android+iOS) + Diagnose-Badge raus. iOS-TestFlight-Build läuft."
-    },
-    {
-      "t": "2026-08-19T21:30:00+02:00",
-      "m": "✅ v1.10.6 auf Arifs Gerät voll bestätigt: Balken erscheint (safe-area-Fix), Scrollen überall flüssig (Badge pointerEvents), Version zeigt 'v1.10.6 (18)', 'X Wochen früher/später als geplant'-Prognose sichtbar."
-    },
-    {
-      "t": "2026-08-19T12:46:00+02:00",
-      "m": "🧭 Kai-Rejoin: online + Team synchronisiert, v1.10.6/1.10.7-Zyklus koordiniert."
-    },
-    {
-      "t": "2026-08-19T08:15:00+02:00",
-      "m": "🎯 ZUNEHMEN-MODUS komplett & von Arif als korrekt bestätigt: richtungs-bewusste Statistik/Kurve/Kalorien, Profil-Richtungswahl im Onboarding + Tour-Schritt."
-    },
-    {
-      "t": "2026-07-06T21:38:41+02:00",
-      "m": "🎉 TestFlight-Freigabe: Apple hat die iOS-Beta durchgewinkt — Strong Gnome auf TestFlight testbar."
     }
   ]
 }

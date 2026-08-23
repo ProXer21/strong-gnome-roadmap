@@ -1,76 +1,76 @@
 {
   "commits": [
     {
-      "ver": "·",
-      "msg": "[ios] TestFlight Build 3: Bundle-ID com.devdesigners.stronggnome, Team, iPhone-o",
-      "iso": "2026-07-03T01:15:26+02:00",
-      "hash": "224b3a2"
+      "ver": "v1.12.1",
+      "msg": "[build] Android vc28/v1.12.1 — Zeit-Uebungen + SE-Overflow-Fix fuer lange Timer",
+      "iso": "2026-08-23T14:31:13+02:00",
+      "hash": "7313035"
     },
     {
       "ver": "·",
-      "msg": "[ios] TestFlight-Pipeline + Arif-Klickliste; Archive grün nach Streak/Sound/Gest",
-      "iso": "2026-07-02T19:08:28+02:00",
-      "hash": "e84ca53"
+      "msg": "[ui] Zeit-Countdown: Overflow-Schutz fuer lange Dauer (Leo-QA-Fund)",
+      "iso": "2026-08-23T14:28:04+02:00",
+      "hash": "97d5ff0"
+    },
+    {
+      "ver": "v1.12.0",
+      "msg": "[build] Android vc27/v1.12.0 — Zeit-Uebungen mit Countdown-Timer (Plank etc.)",
+      "iso": "2026-08-23T14:25:27+02:00",
+      "hash": "e60b325"
     },
     {
       "ver": "·",
-      "msg": "[ui] Streak-Widget: 4 Mahlzeiten-Ringe wie Arifs Screenshot",
-      "iso": "2026-07-02T15:10:18+02:00",
-      "hash": "a003879"
+      "msg": "[ui] Zeit-Uebungen: Editor-Umschalter + Live-Countdown + Verlauf mm:ss + Tutorial",
+      "iso": "2026-08-23T14:16:22+02:00",
+      "hash": "ce457d3"
     },
     {
       "ver": "·",
-      "msg": "[ui] Streak-Notification jetzt auf dem Sperrbildschirm sichtbar (Channel DEFAULT",
-      "iso": "2026-07-02T14:54:05+02:00",
-      "hash": "5fb4bb1"
+      "msg": "[logic] Zeit-Übungen (Countdown): Datenmodell + Helfer + Aggregations-Ausschluss",
+      "iso": "2026-08-23T14:10:47+02:00",
+      "hash": "f77ec7a"
     },
     {
       "ver": "·",
-      "msg": "[ui] Streak-Feature Teil C: Android-Homescreen-Widget (Kai-Paket)",
-      "iso": "2026-07-02T14:47:06+02:00",
-      "hash": "7ded544"
+      "msg": "[ui] Import-Robustheit: Backup 'Aus Zwischenablage einfuegen' (dep-frei)",
+      "iso": "2026-08-21T14:58:32+02:00",
+      "hash": "b5352e7"
+    },
+    {
+      "ver": "v1.11.6",
+      "msg": "[build] Android vc26/v1.11.6 — Wipe-Guard-Hotfix (Load-Fehler ueberschreibt kein Doc mehr)",
+      "iso": "2026-08-21T14:33:17+02:00",
+      "hash": "26d929e"
     },
     {
       "ver": "·",
-      "msg": "[coord] Kai aktiv (echte Session) + Vera Teil C (Streak-Homescreen-Widget) aufs ",
-      "iso": "2026-07-02T14:35:00+02:00",
-      "hash": "ae5d4a1"
+      "msg": "[logic] PRIO-1 Hotfix: Load-Fehler darf kein Doc mit LEER überschreiben (Wipe-Guard)",
+      "iso": "2026-08-21T14:31:00+02:00",
+      "hash": "29c6df9"
+    },
+    {
+      "ver": "v1.11.5",
+      "msg": "[build] Android vc25/v1.11.5 — Daten-Isolation KOMPLETT (+ §4 ACTIVE_KEY uid-scoped)",
+      "iso": "2026-08-21T14:13:46+02:00",
+      "hash": "abf5374"
     },
     {
       "ver": "·",
-      "msg": "[ui] Streak-Notification aufgeräumt + auf Sperrbildschirm sichtbar (PUBLIC)",
-      "iso": "2026-07-02T14:29:02+02:00",
-      "hash": "3e66937"
+      "msg": "[ui] Daten-Isolation §4: laufendes Workout pro Konto (activeWorkoutKey(uid))",
+      "iso": "2026-08-21T14:11:27+02:00",
+      "hash": "5075736"
+    },
+    {
+      "ver": "v1.11.4",
+      "msg": "[build] Android vc24/v1.11.4 — PRIO-1 Daten-Isolation (key={uid} Remount + no-save-until-loaded + Konto-Wechsel-Spinner + Logout-Cleanup)",
+      "iso": "2026-08-21T14:07:42+02:00",
+      "hash": "4a3d8ca"
     },
     {
       "ver": "·",
-      "msg": "[ui] Streak-Benachrichtigung (Sperrbildschirm): Flamme + Wochenziel + kcal",
-      "iso": "2026-07-02T14:23:00+02:00",
-      "hash": "cb9104b"
-    },
-    {
-      "ver": "·",
-      "msg": "[build] versionCode 4 / v1.3 — Streak-Flammen in der App",
-      "iso": "2026-07-02T14:07:31+02:00",
-      "hash": "033fbcd"
-    },
-    {
-      "ver": "·",
-      "msg": "[ui] Streak-Feature Teil A: Flammen-Streaks in der App (Kai-Paket)",
-      "iso": "2026-07-02T14:06:37+02:00",
-      "hash": "4150f1a"
-    },
-    {
-      "ver": "·",
-      "msg": "[logic] Streak-System: nutritionStreak + trainingWeekStreak + streakCardData (Ka",
-      "iso": "2026-07-02T13:49:11+02:00",
-      "hash": "cd60234"
-    },
-    {
-      "ver": "·",
-      "msg": "[ios] WidgetKit-Konzept + Datenvertrag (Kai-Folgepaket): App Group + Bridge + Sw",
-      "iso": "2026-07-02T13:46:06+02:00",
-      "hash": "810b115"
+      "msg": "[logic] Daten-Isolation §5: Logout räumt laufendes Workout; §4-Helper (uid-scoped key)",
+      "iso": "2026-08-21T14:06:05+02:00",
+      "hash": "49c4dc9"
     }
   ]
 }
